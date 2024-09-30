@@ -1,0 +1,62 @@
+body {
+    font-family: 'cursive';
+    background-color:rgb(6, 6, 72);
+    color: #C9D1D9;
+}
+
+h1 {
+    color: #b8d9ff;
+}
+
+/* Attribute Selector */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f1096e;
+}
+
+/* Child Selector */
+ul > li {
+    font-weight: bold;
+}
+
+/* Sibling Selector */
+h1 + p {
+    background-color: #161B22;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* :hover Pseudo-class */
+ul li:hover {
+    color: #3a50ef;
+}
+
+/* :nth-child(n) Pseudo-class */
+ul li:nth-child(1) {
+    background-color: #4a5668;
+}
+
+/* :not(selector) Pseudo-class */
+p:not(:first-of-type) {
+    text-decoration: overline;
+}
+
+/* ::before Pseudo-element */
+ul li::before {
+    content: "🚀 ";
+}
+
+/* ::after Pseudo-element */
+a::after {
+    content: " 🌌";
+}
+
+/* ::first-letter Pseudo-element */
+p::first-letter {
+    font-size: 200%;
+    color: #10e46c;
+}
